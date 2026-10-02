@@ -8,6 +8,8 @@ dist/
 .idea/
 coverage/
 storage/
+!packages/integrations/src/storage/
+!packages/integrations/src/storage/**/*.ts
 *.sqlite
 *.sqlite-wal
 *.sqlite-shm

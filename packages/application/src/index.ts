@@ -2,6 +2,12 @@ import type { PaymentAttempt, PaymentStatus, PreparedDocument, PrintJob } from '
 
 export { beginPayment, buildQuote, configureJob, markPaymentSucceeded } from './print-workflow.js';
 export type { PriceMatrix } from './print-workflow.js';
+export type { FileStore } from './file-store.js';
+export { DocumentIngestionService } from './document-ingestion.js';
+export type {
+  DocumentAdmissionPort, DocumentAdmissionResult, DocumentIngestionRepository,
+  DocumentIngestionResult, IngestedDocument,
+} from './document-ingestion.js';
 
 export interface ProviderPaymentResult {
   readonly status: Exclude<PaymentStatus, 'CREATED'>;
@@ -17,12 +23,6 @@ export interface PaymentGateway {
   createCollection(attempt: PaymentAttempt): Promise<ProviderPaymentResult>;
   queryCollection(attempt: PaymentAttempt): Promise<ProviderPaymentResult>;
   verifyCallback(rawBody: Uint8Array, headers: Readonly<Record<string, string>>): Promise<ProviderPaymentResult>;
-}
-
-export interface FileStore {
-  put(key: string, bytes: AsyncIterable<Uint8Array>, maxBytes: number): Promise<{ sizeBytes: number; sha256: string }>;
-  read(key: string): AsyncIterable<Uint8Array>;
-  delete(key: string): Promise<void>;
 }
 
 export interface DocumentProcessor {
