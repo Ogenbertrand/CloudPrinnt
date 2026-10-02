@@ -33,7 +33,7 @@ jobs:
         uses: github/codeql-action/init@v4
         with:
           languages: javascript-typescript
-          build-mode: manual
+          build-mode: none
           config-file: ./.github/codeql-config.yml
       - name: Set up Node.js
         uses: actions/setup-node@v7
@@ -42,8 +42,6 @@ jobs:
           cache: npm
       - name: Install dependencies
         run: npm ci --ignore-scripts --no-audit --no-fund
-      - name: Build TypeScript workspace
-        run: npm run build
       - name: Analyze code
         uses: github/codeql-action/analyze@v4
         with:
