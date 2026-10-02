@@ -10,10 +10,12 @@
     }
   },
   "scripts": {
-    "build": "tsc --build"
+    "build": "tsc --build",
+    "migrate": "tsx src/migrate.ts"
   },
   "dependencies": {
+    "@cloudprint/application": "0.0.0",
     "@cloudprint/domain": "0.0.0",
-    "@cloudprint/application": "0.0.0"
+    "pg": "^8.23.1"
   }
 }

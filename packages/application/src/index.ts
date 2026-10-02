@@ -1,5 +1,8 @@
 import type { PaymentAttempt, PaymentStatus, PreparedDocument, PrintJob } from '@cloudprint/domain';
 
+export { beginPayment, buildQuote, configureJob, markPaymentSucceeded } from './print-workflow.js';
+export type { PriceMatrix } from './print-workflow.js';
+
 export interface ProviderPaymentResult {
   readonly status: Exclude<PaymentStatus, 'CREATED'>;
   readonly merchantReference: string;

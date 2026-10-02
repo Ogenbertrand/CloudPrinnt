@@ -35,6 +35,8 @@ jobs:
         run: npm run check
       - name: Build
         run: npm run build
+      - name: Run backend tests
+        run: npm test
       - name: Validate architecture assets
         run: python3 scripts/validate-architecture.py
 

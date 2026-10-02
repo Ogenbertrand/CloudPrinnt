@@ -259,16 +259,16 @@
           <mxGeometry x="40" y="90" width="300" height="26" as="geometry" />
         </mxCell>
         <mxCell id="Document-0" value="RECEIVED" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0ff;strokeColor=#4569b2;fontColor=#17263c;fontSize=12;spacing=7;arcSize=12;">
-          <mxGeometry x="40" y="120" width="150" height="60" as="geometry" />
+          <mxGeometry x="40" y="120" width="135" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Document-1" value="PROCESSING" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0ff;strokeColor=#4569b2;fontColor=#17263c;fontSize=12;spacing=7;arcSize=12;">
-          <mxGeometry x="220" y="120" width="150" height="60" as="geometry" />
+          <mxGeometry x="200" y="120" width="135" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Document-2" value="READY" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0ff;strokeColor=#4569b2;fontColor=#17263c;fontSize=12;spacing=7;arcSize=12;">
-          <mxGeometry x="400" y="120" width="150" height="60" as="geometry" />
+          <mxGeometry x="360" y="120" width="135" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Document-3" value="REJECTED" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0ff;strokeColor=#4569b2;fontColor=#17263c;fontSize=12;spacing=7;arcSize=12;">
-          <mxGeometry x="580" y="120" width="150" height="60" as="geometry" />
+          <mxGeometry x="520" y="120" width="135" height="60" as="geometry" />
         </mxCell>
         <mxCell id="edge-1" value="" edge="1" parent="1" source="Document-0" target="Document-1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;rounded=1;html=1;fontSize=11;fontColor=#34445a;labelBackgroundColor=#ffffff;strokeWidth=1.5;strokeColor=#8390a3;dashed=0;">
           <mxGeometry relative="1" as="geometry" />
@@ -283,16 +283,16 @@
           <mxGeometry x="40" y="270" width="300" height="26" as="geometry" />
         </mxCell>
         <mxCell id="Payment attempt-0" value="CREATED" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff1da;strokeColor=#b87b20;fontColor=#17263c;fontSize=12;spacing=7;arcSize=12;">
-          <mxGeometry x="40" y="300" width="150" height="60" as="geometry" />
+          <mxGeometry x="40" y="300" width="135" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Payment attempt-1" value="PENDING" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff1da;strokeColor=#b87b20;fontColor=#17263c;fontSize=12;spacing=7;arcSize=12;">
-          <mxGeometry x="220" y="300" width="150" height="60" as="geometry" />
+          <mxGeometry x="200" y="300" width="135" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Payment attempt-2" value="SUCCEEDED" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff1da;strokeColor=#b87b20;fontColor=#17263c;fontSize=12;spacing=7;arcSize=12;">
-          <mxGeometry x="400" y="300" width="150" height="60" as="geometry" />
+          <mxGeometry x="360" y="300" width="135" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Payment attempt-3" value="FAILED / CANCELLED" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff1da;strokeColor=#b87b20;fontColor=#17263c;fontSize=12;spacing=7;arcSize=12;">
-          <mxGeometry x="580" y="300" width="150" height="60" as="geometry" />
+          <mxGeometry x="520" y="300" width="135" height="60" as="geometry" />
         </mxCell>
         <mxCell id="edge-4" value="" edge="1" parent="1" source="Payment attempt-0" target="Payment attempt-1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;rounded=1;html=1;fontSize=11;fontColor=#34445a;labelBackgroundColor=#ffffff;strokeWidth=1.5;strokeColor=#8390a3;dashed=0;">
           <mxGeometry relative="1" as="geometry" />
@@ -307,25 +307,28 @@
           <mxGeometry x="40" y="450" width="300" height="26" as="geometry" />
         </mxCell>
         <mxCell id="Print job-0" value="PENDING_CONFIG" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6f4ea;strokeColor=#368453;fontColor=#17263c;fontSize=12;spacing=7;arcSize=12;">
-          <mxGeometry x="40" y="480" width="150" height="60" as="geometry" />
+          <mxGeometry x="40" y="480" width="135" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Print job-1" value="PENDING_PAYMENT" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6f4ea;strokeColor=#368453;fontColor=#17263c;fontSize=12;spacing=7;arcSize=12;">
-          <mxGeometry x="220" y="480" width="150" height="60" as="geometry" />
+          <mxGeometry x="200" y="480" width="135" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Print job-2" value="PAID_QUEUE" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6f4ea;strokeColor=#368453;fontColor=#17263c;fontSize=12;spacing=7;arcSize=12;">
-          <mxGeometry x="400" y="480" width="150" height="60" as="geometry" />
+        <mxCell id="Print job-2" value="PROCESSING_PAYMENT" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6f4ea;strokeColor=#368453;fontColor=#17263c;fontSize=12;spacing=7;arcSize=12;">
+          <mxGeometry x="360" y="480" width="135" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Print job-3" value="RESERVED" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6f4ea;strokeColor=#368453;fontColor=#17263c;fontSize=12;spacing=7;arcSize=12;">
-          <mxGeometry x="580" y="480" width="150" height="60" as="geometry" />
+        <mxCell id="Print job-3" value="PAID_QUEUE" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6f4ea;strokeColor=#368453;fontColor=#17263c;fontSize=12;spacing=7;arcSize=12;">
+          <mxGeometry x="520" y="480" width="135" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Print job-4" value="SUBMITTED" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6f4ea;strokeColor=#368453;fontColor=#17263c;fontSize=12;spacing=7;arcSize=12;">
-          <mxGeometry x="760" y="480" width="150" height="60" as="geometry" />
+        <mxCell id="Print job-4" value="RESERVED" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6f4ea;strokeColor=#368453;fontColor=#17263c;fontSize=12;spacing=7;arcSize=12;">
+          <mxGeometry x="680" y="480" width="135" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Print job-5" value="READY_FOR_PICKUP" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6f4ea;strokeColor=#368453;fontColor=#17263c;fontSize=12;spacing=7;arcSize=12;">
-          <mxGeometry x="940" y="480" width="150" height="60" as="geometry" />
+        <mxCell id="Print job-5" value="SUBMITTED" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6f4ea;strokeColor=#368453;fontColor=#17263c;fontSize=12;spacing=7;arcSize=12;">
+          <mxGeometry x="840" y="480" width="135" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Print job-6" value="COMPLETED" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6f4ea;strokeColor=#368453;fontColor=#17263c;fontSize=12;spacing=7;arcSize=12;">
-          <mxGeometry x="1120" y="480" width="150" height="60" as="geometry" />
+        <mxCell id="Print job-6" value="READY_FOR_PICKUP" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6f4ea;strokeColor=#368453;fontColor=#17263c;fontSize=12;spacing=7;arcSize=12;">
+          <mxGeometry x="1000" y="480" width="135" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Print job-7" value="COMPLETED" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6f4ea;strokeColor=#368453;fontColor=#17263c;fontSize=12;spacing=7;arcSize=12;">
+          <mxGeometry x="1160" y="480" width="135" height="60" as="geometry" />
         </mxCell>
         <mxCell id="edge-7" value="" edge="1" parent="1" source="Print job-0" target="Print job-1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;rounded=1;html=1;fontSize=11;fontColor=#34445a;labelBackgroundColor=#ffffff;strokeWidth=1.5;strokeColor=#8390a3;dashed=0;">
           <mxGeometry relative="1" as="geometry" />
@@ -345,40 +348,43 @@
         <mxCell id="edge-12" value="" edge="1" parent="1" source="Print job-5" target="Print job-6" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;rounded=1;html=1;fontSize=11;fontColor=#34445a;labelBackgroundColor=#ffffff;strokeWidth=1.5;strokeColor=#8390a3;dashed=0;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="edge-13" value="" edge="1" parent="1" source="Print job-6" target="Print job-7" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;rounded=1;html=1;fontSize=11;fontColor=#34445a;labelBackgroundColor=#ffffff;strokeWidth=1.5;strokeColor=#8390a3;dashed=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="Print attempt" value="Print attempt" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f3f5f8;strokeColor=#8390a3;fontColor=#17263c;fontSize=12;spacing=7;arcSize=12;shape=text;strokeColor=none;fillColor=none;align=left;fontSize=15;fontStyle=1;">
           <mxGeometry x="40" y="630" width="300" height="26" as="geometry" />
         </mxCell>
         <mxCell id="Print attempt-0" value="PREPARED" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f3f5f8;strokeColor=#8390a3;fontColor=#17263c;fontSize=12;spacing=7;arcSize=12;">
-          <mxGeometry x="40" y="660" width="150" height="60" as="geometry" />
+          <mxGeometry x="40" y="660" width="135" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Print attempt-1" value="SUBMITTING" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f3f5f8;strokeColor=#8390a3;fontColor=#17263c;fontSize=12;spacing=7;arcSize=12;">
-          <mxGeometry x="220" y="660" width="150" height="60" as="geometry" />
+          <mxGeometry x="200" y="660" width="135" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Print attempt-2" value="SUBMITTED" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f3f5f8;strokeColor=#8390a3;fontColor=#17263c;fontSize=12;spacing=7;arcSize=12;">
-          <mxGeometry x="400" y="660" width="150" height="60" as="geometry" />
+          <mxGeometry x="360" y="660" width="135" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Print attempt-3" value="CONFIRMED" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f3f5f8;strokeColor=#8390a3;fontColor=#17263c;fontSize=12;spacing=7;arcSize=12;">
-          <mxGeometry x="580" y="660" width="150" height="60" as="geometry" />
+          <mxGeometry x="520" y="660" width="135" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Print attempt-4" value="FAILED / UNKNOWN" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f3f5f8;strokeColor=#8390a3;fontColor=#17263c;fontSize=12;spacing=7;arcSize=12;">
-          <mxGeometry x="760" y="660" width="150" height="60" as="geometry" />
+          <mxGeometry x="680" y="660" width="135" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="edge-13" value="" edge="1" parent="1" source="Print attempt-0" target="Print attempt-1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;rounded=1;html=1;fontSize=11;fontColor=#34445a;labelBackgroundColor=#ffffff;strokeWidth=1.5;strokeColor=#8390a3;dashed=0;">
+        <mxCell id="edge-14" value="" edge="1" parent="1" source="Print attempt-0" target="Print attempt-1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;rounded=1;html=1;fontSize=11;fontColor=#34445a;labelBackgroundColor=#ffffff;strokeWidth=1.5;strokeColor=#8390a3;dashed=0;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="edge-14" value="" edge="1" parent="1" source="Print attempt-1" target="Print attempt-2" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;rounded=1;html=1;fontSize=11;fontColor=#34445a;labelBackgroundColor=#ffffff;strokeWidth=1.5;strokeColor=#8390a3;dashed=0;">
+        <mxCell id="edge-15" value="" edge="1" parent="1" source="Print attempt-1" target="Print attempt-2" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;rounded=1;html=1;fontSize=11;fontColor=#34445a;labelBackgroundColor=#ffffff;strokeWidth=1.5;strokeColor=#8390a3;dashed=0;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="edge-15" value="" edge="1" parent="1" source="Print attempt-2" target="Print attempt-3" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;rounded=1;html=1;fontSize=11;fontColor=#34445a;labelBackgroundColor=#ffffff;strokeWidth=1.5;strokeColor=#8390a3;dashed=0;">
+        <mxCell id="edge-16" value="" edge="1" parent="1" source="Print attempt-2" target="Print attempt-3" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;rounded=1;html=1;fontSize=11;fontColor=#34445a;labelBackgroundColor=#ffffff;strokeWidth=1.5;strokeColor=#8390a3;dashed=0;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="edge-16" value="failure / ambiguity" edge="1" parent="1" source="Print attempt-1" target="Print attempt-4" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;rounded=1;html=1;fontSize=11;fontColor=#34445a;labelBackgroundColor=#ffffff;strokeWidth=1.5;strokeColor=#bc5149;dashed=0;">
+        <mxCell id="edge-17" value="failure / ambiguity" edge="1" parent="1" source="Print attempt-1" target="Print attempt-4" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;rounded=1;html=1;fontSize=11;fontColor=#34445a;labelBackgroundColor=#ffffff;strokeWidth=1.5;strokeColor=#bc5149;dashed=0;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="payment-unknown" value="UNKNOWN&lt;br&gt;Query same reference;&lt;br&gt;do not recharge" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fde9e7;strokeColor=#bc5149;fontColor=#17263c;fontSize=12;spacing=7;arcSize=12;">
           <mxGeometry x="760" y="300" width="200" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="edge-17" value="timeout" edge="1" parent="1" source="Payment attempt-1" target="payment-unknown" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;rounded=1;html=1;fontSize=11;fontColor=#34445a;labelBackgroundColor=#ffffff;strokeWidth=1.5;strokeColor=#bc5149;dashed=0;">
+        <mxCell id="edge-18" value="timeout" edge="1" parent="1" source="Payment attempt-1" target="payment-unknown" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;rounded=1;html=1;fontSize=11;fontColor=#34445a;labelBackgroundColor=#ffffff;strokeWidth=1.5;strokeColor=#bc5149;dashed=0;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="rules" value="&lt;b&gt;Recovery rules&lt;/b&gt;&lt;br&gt;• Payment UNKNOWN → SUCCEEDED / FAILED only after provider evidence. A timeout does not release the charge lock.&lt;br&gt;• Print UNKNOWN → staff review of OS queue and paper. A reprint is a new, audited attempt, explicitly authorized.&lt;br&gt;• Device reservations never expire into automatic reassignment while offline printing is possible.&lt;br&gt;• Reassignment / refund requires quiescing the original device and resolving its pending print attempts.&lt;br&gt;• Unpaid jobs may expire or be cancelled. Paid exceptions enter FULFILMENT_REVIEW; money remains recorded separately.&lt;br&gt;• REFUND_PENDING / REFUNDED are refund records, not a reversal of a successful payment record." vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f3f5f8;strokeColor=#8390a3;fontColor=#17263c;fontSize=12;spacing=7;arcSize=12;shape=text;strokeColor=none;fillColor=none;align=left;fontSize=13;fontStyle=0;">

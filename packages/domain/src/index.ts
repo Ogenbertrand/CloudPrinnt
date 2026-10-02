@@ -4,6 +4,7 @@ export type DocumentStatus = 'RECEIVED' | 'PROCESSING' | 'READY' | 'REJECTED';
 export type JobStatus =
   | 'PENDING_CONFIG'
   | 'PENDING_PAYMENT'
+  | 'PROCESSING_PAYMENT'
   | 'PAID_QUEUE'
   | 'RESERVED'
   | 'SUBMITTED'

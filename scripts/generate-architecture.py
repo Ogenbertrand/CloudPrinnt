@@ -125,13 +125,13 @@ p = Page("03 State and recovery", "CloudPrint CM / State and recovery",
 groups = [
     ("Document",120,"blue",["RECEIVED","PROCESSING","READY","REJECTED"]),
     ("Payment attempt",300,"orange",["CREATED","PENDING","SUCCEEDED","FAILED / CANCELLED"]),
-    ("Print job",480,"green",["PENDING_CONFIG","PENDING_PAYMENT","PAID_QUEUE","RESERVED","SUBMITTED","READY_FOR_PICKUP","COMPLETED"]),
+    ("Print job",480,"green",["PENDING_CONFIG","PENDING_PAYMENT","PROCESSING_PAYMENT","PAID_QUEUE","RESERVED","SUBMITTED","READY_FOR_PICKUP","COMPLETED"]),
     ("Print attempt",660,"gray",["PREPARED","SUBMITTING","SUBMITTED","CONFIRMED","FAILED / UNKNOWN"]),
 ]
 for group,y,color,states in groups:
     p.text(group,group,40,y-30,300,26,15,True)
     for i,s in enumerate(states):
-        p.node(f"{group}-{i}",s,40+i*180,y,w=150,h=60,color=color)
+        p.node(f"{group}-{i}",s,40+i*160,y,w=135,h=60,color=color)
     last_main = len(states)-1 if group=="Print job" else len(states)-2
     for i in range(last_main): p.edge(f"{group}-{i}",f"{group}-{i+1}")
     if group=="Document": p.edge("Document-1","Document-3","invalid","red")

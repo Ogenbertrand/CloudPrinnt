@@ -32,6 +32,7 @@ Flutter code is written in Dart. TypeScript runs on the backend; versioned JSON 
 npm ci
 npm run check
 npm run build
+npm test
 python3 scripts/validate-architecture.py
 cd apps/cloudprint_app
 flutter pub get
@@ -39,4 +40,4 @@ flutter analyze
 flutter test
 ```
 
-The TypeScript build compiles contracts, ports, and process blueprints; it does not start application services. The Flutter app has an application foundation screen, without authentication, a production dashboard, or a working printer adapter. Native builds must be tested on their respective operating systems.
+The backend starts a NestJS/Fastify API foundation with PostgreSQL migrations, liveness/readiness probes, input hardening, rate limits, and OpenAPI documentation. It does not yet connect to WhatsApp, Mobile Money, document processing, or printer devices. The Flutter app has an application foundation screen, without authentication, a production dashboard, or a working printer adapter. Native builds must be tested on their respective operating systems.
