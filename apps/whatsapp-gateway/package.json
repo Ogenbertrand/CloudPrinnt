@@ -1,0 +1,22 @@
+{
+  "name": "@cloudprint/whatsapp-gateway",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/main.d.ts",
+      "import": "./dist/main.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc --build"
+  },
+  "dependencies": {
+    "@cloudprint/domain": "0.0.0",
+    "@cloudprint/application": "0.0.0",
+    "@cloudprint/config": "0.0.0",
+    "@cloudprint/database": "0.0.0",
+    "@cloudprint/integrations": "0.0.0"
+  }
+}

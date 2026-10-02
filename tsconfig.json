@@ -1,0 +1,32 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "packages/domain"
+    },
+    {
+      "path": "packages/config"
+    },
+    {
+      "path": "packages/contracts"
+    },
+    {
+      "path": "packages/application"
+    },
+    {
+      "path": "packages/database"
+    },
+    {
+      "path": "packages/integrations"
+    },
+    {
+      "path": "apps/api"
+    },
+    {
+      "path": "apps/worker"
+    },
+    {
+      "path": "apps/whatsapp-gateway"
+    }
+  ]
+}

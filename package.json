@@ -1,0 +1,24 @@
+{
+  "name": "cloudprint-cm",
+  "version": "0.0.0",
+  "private": true,
+  "description": "CloudPrint CM architecture and TypeScript backend foundation",
+  "workspaces": [
+    "apps/api",
+    "apps/worker",
+    "apps/whatsapp-gateway",
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsc --build",
+    "check": "tsc --build --pretty false",
+    "architecture:generate": "python3 scripts/generate-architecture.py",
+    "architecture:validate": "python3 scripts/validate-architecture.py"
+  },
+  "devDependencies": {
+    "typescript": "7.0.2"
+  }
+}
