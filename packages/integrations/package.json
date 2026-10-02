@@ -13,8 +13,11 @@
     "build": "tsc --build"
   },
   "dependencies": {
-    "@cloudprint/domain": "0.0.0",
     "@cloudprint/application": "0.0.0",
-    "@cloudprint/config": "0.0.0"
+    "@cloudprint/config": "0.0.0",
+    "@cloudprint/contracts": "0.0.0",
+    "@cloudprint/domain": "0.0.0",
+    "pdf-parse": "^2.4.5",
+    "yauzl": "^3.4.0"
   }
 }

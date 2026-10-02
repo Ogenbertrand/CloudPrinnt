@@ -1,6 +1,7 @@
 /** Agreed baseline. Runtime environment validation will be added with the API. */
 export const PRODUCT_LIMITS = {
   maxUploadBytes: 15_000_000,
+  maxDocumentPages: 500,
   convenienceFeeXaf: 50,
   currency: 'XAF',
   displayTimeZone: 'Africa/Douala',

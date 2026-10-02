@@ -15,7 +15,7 @@
   "scripts": {
     "build": "tsc --build",
     "check": "tsc --build --pretty false",
-    "test": "tsx --test apps/api/test/**/*.test.ts packages/application/test/**/*.test.ts",
+    "test": "tsx --test apps/api/test/**/*.test.ts packages/application/test/**/*.test.ts packages/integrations/test/**/*.test.ts",
     "api:dev": "tsx watch apps/api/src/main.ts",
     "api:start": "node apps/api/dist/main.js",
     "database:migrate": "tsx packages/database/src/migrate.ts",
@@ -25,6 +25,7 @@
   "devDependencies": {
     "@types/node": "^26.6.4",
     "@types/pg": "^8.23.1",
+    "@types/yauzl": "^2.10.3",
     "tsx": "^4.23.15",
     "typescript": "7.0.2"
   }
