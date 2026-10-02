@@ -10,6 +10,7 @@
 | [Architecture diagram](architecture/cloudprint-architecture.drawio) | Editable five-page draw.io source |
 | [Architecture PNG](architecture/cloudprint-system-architecture.png) | Portable overview image |
 | [Local development](engineering/local-development.md) | Validation commands and development services |
+| [CI/CD](engineering/ci-cd.md) | Checks, security scanning, native builds, and deployment controls |
 | [Repository layout](engineering/repository-layout.md) | Ownership and dependency direction |
 
 All documents describe a foundation, not functioning payment, WhatsApp, or printing integrations.

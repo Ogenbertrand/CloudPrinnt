@@ -1,0 +1,10 @@
+name: CloudPrint CodeQL configuration
+
+queries:
+  - uses: security-and-quality
+
+paths-ignore:
+  - apps/cloudprint_app/**
+  - '**/.dart_tool/**'
+  - '**/build/**'
+  - '**/dist/**'

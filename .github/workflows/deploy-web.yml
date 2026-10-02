@@ -1,0 +1,66 @@
+name: Deploy web application
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - apps/cloudprint_app/**
+      - .github/workflows/deploy-web.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Build GitHub Pages artifact
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - name: Configure GitHub Pages
+        id: pages
+        uses: actions/configure-pages@v5
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          flutter-version: 3.44.8
+          cache: true
+      - name: Resolve Dart dependencies
+        working-directory: apps/cloudprint_app
+        run: flutter pub get
+      - name: Verify Flutter application
+        working-directory: apps/cloudprint_app
+        run: |
+          flutter analyze
+          flutter test
+      - name: Build web application
+        working-directory: apps/cloudprint_app
+        run: flutter build web --release --base-href "${{ steps.pages.outputs.base_path }}/"
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: apps/cloudprint_app/build/web
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy GitHub Pages artifact
+        id: deployment
+        uses: actions/deploy-pages@v4
