@@ -29,7 +29,7 @@ jobs:
       run:
         working-directory: apps/cloudprint_app
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           persist-credentials: false
       - uses: subosito/flutter-action@v2
@@ -58,7 +58,7 @@ jobs:
       run:
         working-directory: apps/cloudprint_app
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           persist-credentials: false
       - uses: subosito/flutter-action@v2
@@ -104,7 +104,7 @@ jobs:
         shell: bash
         working-directory: apps/cloudprint_app
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           persist-credentials: false
       - uses: subosito/flutter-action@v2
