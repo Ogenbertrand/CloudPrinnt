@@ -41,7 +41,7 @@ jobs:
       - run: flutter build apk --release
       - run: flutter build appbundle --release
       - name: Upload Android deliverables
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: cloudprint-android-${{ github.sha }}
           path: |
@@ -69,7 +69,7 @@ jobs:
       - run: flutter pub get
       - run: flutter build ios --release --no-codesign
       - name: Upload unsigned iOS application
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: cloudprint-ios-unsigned-${{ github.sha }}
           path: apps/cloudprint_app/build/ios/iphoneos/Runner.app
@@ -119,7 +119,7 @@ jobs:
       - run: flutter config --enable-${{ matrix.target }}-desktop
       - run: flutter build ${{ matrix.target }} --release
       - name: Upload desktop application
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: cloudprint-${{ matrix.target }}-${{ github.sha }}
           path: ${{ matrix.artifact_path }}
